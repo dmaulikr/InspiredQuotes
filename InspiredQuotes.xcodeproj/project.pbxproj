@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9819C7E11E56B79500C31BD5 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9819C7E01E56B79500C31BD5 /* ToDo.swift */; };
 		983F27271E565E8B0087A5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983F27261E565E8B0087A5F8 /* AppDelegate.swift */; };
-		983F27291E565E8B0087A5F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983F27281E565E8B0087A5F8 /* ViewController.swift */; };
+		983F27291E565E8B0087A5F8 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983F27281E565E8B0087A5F8 /* QuoteViewController.swift */; };
 		983F272C1E565E8B0087A5F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983F272A1E565E8B0087A5F8 /* Main.storyboard */; };
 		983F272E1E565E8B0087A5F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983F272D1E565E8B0087A5F8 /* Assets.xcassets */; };
 		983F27311E565E8B0087A5F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983F272F1E565E8B0087A5F8 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,8 @@
 		983F274A1E565E8C0087A5F8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983F27491E565E8C0087A5F8 /* InterfaceController.swift */; };
 		983F274C1E565E8C0087A5F8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983F274B1E565E8C0087A5F8 /* ExtensionDelegate.swift */; };
 		983F274E1E565E8C0087A5F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983F274D1E565E8C0087A5F8 /* Assets.xcassets */; };
+		983F275E1E565FE30087A5F8 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983F275D1E565FE30087A5F8 /* Quotes.swift */; };
+		983F275F1E5664290087A5F8 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983F275D1E565FE30087A5F8 /* Quotes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +67,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9819C7E01E56B79500C31BD5 /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDo.swift; path = InspiredQuotes/ToDo.swift; sourceTree = "<group>"; };
 		983F27231E565E8B0087A5F8 /* InspiredQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InspiredQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		983F27261E565E8B0087A5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		983F27281E565E8B0087A5F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		983F27281E565E8B0087A5F8 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		983F272B1E565E8B0087A5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		983F272D1E565E8B0087A5F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		983F27301E565E8B0087A5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		983F274B1E565E8C0087A5F8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		983F274D1E565E8C0087A5F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		983F274F1E565E8C0087A5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		983F275D1E565FE30087A5F8 /* Quotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +108,8 @@
 		983F271A1E565E8B0087A5F8 = {
 			isa = PBXGroup;
 			children = (
+				9819C7E01E56B79500C31BD5 /* ToDo.swift */,
+				983F27601E56642D0087A5F8 /* Shared */,
 				983F27251E565E8B0087A5F8 /* InspiredQuotes */,
 				983F27391E565E8B0087A5F8 /* InspiredQuotes WatchKit App */,
 				983F27481E565E8C0087A5F8 /* InspiredQuotes WatchKit Extension */,
@@ -124,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				983F27261E565E8B0087A5F8 /* AppDelegate.swift */,
-				983F27281E565E8B0087A5F8 /* ViewController.swift */,
+				983F27281E565E8B0087A5F8 /* QuoteViewController.swift */,
 				983F272A1E565E8B0087A5F8 /* Main.storyboard */,
 				983F272D1E565E8B0087A5F8 /* Assets.xcassets */,
 				983F272F1E565E8B0087A5F8 /* LaunchScreen.storyboard */,
@@ -152,6 +159,15 @@
 				983F274F1E565E8C0087A5F8 /* Info.plist */,
 			);
 			path = "InspiredQuotes WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		983F27601E56642D0087A5F8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				983F275D1E565FE30087A5F8 /* Quotes.swift */,
+			);
+			name = Shared;
+			path = InspiredQuotes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,8 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				983F27291E565E8B0087A5F8 /* ViewController.swift in Sources */,
+				983F27291E565E8B0087A5F8 /* QuoteViewController.swift in Sources */,
 				983F27271E565E8B0087A5F8 /* AppDelegate.swift in Sources */,
+				983F275E1E565FE30087A5F8 /* Quotes.swift in Sources */,
+				9819C7E11E56B79500C31BD5 /* ToDo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +321,7 @@
 			files = (
 				983F274C1E565E8C0087A5F8 /* ExtensionDelegate.swift in Sources */,
 				983F274A1E565E8C0087A5F8 /* InterfaceController.swift in Sources */,
+				983F275F1E5664290087A5F8 /* Quotes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +576,7 @@
 				983F27541E565E8C0087A5F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		983F27561E565E8C0087A5F8 /* Build configuration list for PBXNativeTarget "InspiredQuotes WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +585,7 @@
 				983F27581E565E8C0087A5F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		983F275A1E565E8C0087A5F8 /* Build configuration list for PBXNativeTarget "InspiredQuotes" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +594,7 @@
 				983F275C1E565E8C0087A5F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,14 +1,34 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="InspiredQuotes_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="0.69999999999999996" heightAdjustment="2" alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="IIZ-U2-mAc">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Need more Inspiration?" id="KjI-c7-sjD">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="tappedButton" destination="AgC-eL-Hgc" id="qMs-fX-CEM"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="KjI-c7-sjD" id="Mbj-fB-KC4"/>
+                        <outlet property="label" destination="IIZ-U2-mAc" id="wLZ-Yr-cw4"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
