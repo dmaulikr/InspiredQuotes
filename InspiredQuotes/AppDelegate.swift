@@ -12,10 +12,34 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let defaults = UserDefaults.standard
 
+    // Why should I check for first launch?
+    // So I can copy the quotes array into NSUserDefaults
+    
+    // Why can't I copy the quotes array every time the user hide/unhide quotes?
+    // It would be an additional step instead of just deleting or adding back those quotes into the copy
+    
+    func checkIfFirstLaunch() {
+        if UserDefaults.standard.bool(forKey: "HasLaunchedBefore") {
+            print("App has launched before")
+        } else {
+            print("This is the first launch ever!")
+        
+            
+            defaults.set(true, forKey: "HasLaunchedBefore")
+            let quotes = Quotes()
+            
+            defaults.setValue(quotes.dictionary, forKey: "customQuotes")
+            
+            defaults.synchronize()
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        checkIfFirstLaunch()
         return true
     }
 

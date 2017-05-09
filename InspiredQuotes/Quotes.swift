@@ -21,7 +21,8 @@ struct Quotes{
                  "How do you truly become more valuable? Learn to work harder on yourself than you do on your job. - Jim Rohn",
                  "The most important thing in communication is to hear what isn't being said. - Peter Drucker",
                  "Scarcity is function of ability, or our lack of ability to acccess resources. - Peter Diamandis",
-                 "Whatever the mind of man can conceive and believe, it can achieve. - Napoleon Hill",
+                 /*
+         "Whatever the mind of man can conceive and believe, it can achieve. - Napoleon Hill",
                  "Believe you can and you are halfway there. - Theodore Roosevelt",
                  "Someone is sitting in the shade today because someone planted a tree a long time ago. - Warren Buffet",
                  "The measure of who we are is what we do with what we have. - Vince Lombardi",
@@ -118,7 +119,11 @@ struct Quotes{
                  "Alone we can do so little; together we can do so much. - Hellen Keller",
                  "We make a living by what we get, but we make a life by what we give. - Winston Churchill",
                  "I want to put a ding in the universe. - Steve Jobs",
+ 
+ */
                  "I have no special talents. I am only passionately curious. - Albert Einstein"
+ 
+ 
         
                  
     ]
